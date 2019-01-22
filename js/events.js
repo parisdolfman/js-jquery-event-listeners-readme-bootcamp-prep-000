@@ -19,6 +19,11 @@ function frameIt() {
 }
 
 function pressIt() {
+  $(document).on('keydown', function {
+    if(key.which == 83) {
+      alert('You pressed the g key')
+    }
+  })
   // bind a keydown event to the input field of the form that alerts a user when they've pressed the 'g' key.
 }
 
