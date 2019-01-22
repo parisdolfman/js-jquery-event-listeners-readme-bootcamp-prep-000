@@ -7,11 +7,15 @@ $(document).ready(function(){
 });
 
 function getIt() {
- // bind a click event to the p  tag that alerts "Hey!"
+ $('p').on('click', function (){
+   alert('hey!')
+ })
 }
 
 function frameIt() {
-  // bind load event that adds class 'tasty' to the image to add a red frame around the image
+ $('img').on('load', function(){
+   $('img').addClass('tasty')
+ })
 }
 
 function pressIt() {
