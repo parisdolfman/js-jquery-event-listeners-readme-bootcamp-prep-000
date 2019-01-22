@@ -19,9 +19,15 @@ function frameIt() {
 }
 
 function pressIt() {
-  // bind a keydown event to the input field of the form that alerts a user when they've pressed the 'g' key.
+  $(document).on('keypress', function(n) {
+    if (n.which == 71) {
+      alert("You pressed the g key.")
+    }
+  })
 }
 
 function submitIt() {
-  // bind a submit event to the form that alerts "Your form is going to be submitted now.".
+ $('form').on("submit", function() {
+   alert('Your form is going to be submitted now.')
+ })
 }
