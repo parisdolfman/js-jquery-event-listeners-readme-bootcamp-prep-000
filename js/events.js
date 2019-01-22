@@ -21,12 +21,14 @@ function frameIt() {
 function pressIt() {
   $(document).on('keydown', function(n) {
     if(n.which == 83) {
-      alert('You pressed the g key')
+      alert('You pressed the g key.')
     }
   })
-  // bind a keydown event to the input field of the form that alerts a user when they've pressed the 'g' key.
+
 }
 
 function submitIt() {
-  // bind a submit event to the form that alerts "Your form is going to be submitted now.".
+ $('form').on("submit", function() {
+   alert('Your form is going to be submitted now.')
+ })
 }
